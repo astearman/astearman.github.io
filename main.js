@@ -1,14 +1,23 @@
-// Price Calculator
-const sum = document.getElementById('add');
-sum.onclick = calculatePrice;
 
-function calculatePrice() {
-    
-  let options = document.getElementsByClassName('price');
-  let optionsLength = options.length,
-  total = 0;
-  for (var i = 0; i < optionsLength; ++i) {
-    total += parseInt(options[i].value * 1);
-      }
-  document.getElementById('totalPrice').value = `$${total.toLocaleString()}`;
-}
+// Adjective Array
+
+const array = [
+  "Dynamic", 
+  "Stategic", 
+  "Resilient", 
+  "Influential", 
+  "Progressive", 
+  "Flexible", 
+  "Innovative", 
+  "Determined", 
+  "Nimble", 
+  "Trusting", 
+  "Focused", 
+  "Stellar"
+]
+
+const last = array.pop();
+const list = array.join("<p>");
+
+document.getElementById('adjectives').innerHTML = list;
+document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&ensp;' + 'to work for!';
