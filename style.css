@@ -25,8 +25,7 @@ h3 {
   text-align: center;
 }
 
-
-.array p:nth-child(even) {
+.array li:nth-child(even) {
   color:#5ac0c5;
 }
 
@@ -34,6 +33,7 @@ h3 {
   font-size: 1.3em;
   line-height:1.3em;
   font-weight:600;
+  list-style-type: none;
 }
 
 #last {

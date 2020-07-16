@@ -1,6 +1,4 @@
 
-// Adjective Array
-
 const array = [
   "Dynamic", 
   "Stategic", 
@@ -16,8 +14,13 @@ const array = [
   "Stellar"
 ]
 
+let list = document.getElementById('adjectives');
 const last = array.pop();
-const list = array.join("<p>");
 
-document.getElementById('adjectives').innerHTML = list;
-document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&ensp;' + 'to work for!';
+array.forEach((item) => {
+  const listItem = document.createElement('li');
+  listItem.innerHTML = `<li>${item}</li>`;
+  list.append(listItem);
+});
+
+document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&nbsp;' + 'to work for!';
