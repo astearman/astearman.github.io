@@ -3,18 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Nth Child Issue</title>
+	<title>Echo</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+	<script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h2>An Array Of Adjectives</h2>
-    <h3>TO DESCRIBE ECHO</h3>
-    <div class="array">
-    <ul id="adjectives"></ul>
-    <hr style="width:5%; margin:10px auto;" />
-    <div id="last"></div>
+	<!--Nav Bar on Desktop-->
+	<div class="anchor" id="home"></div>
+    <nav class="nav-main">
+		<h1 class="nav-title"><a href="#home">ECHO</a></h1>
+		<div class="menu-btn" onclick="toggleNav(), toggleDim()">
+			<div id="toggle_div"></div>
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+        </ul>
+	</nav>
+
+	<div id="dimmer"></div>
+	
+<!--Nav Bar on Mobile-->
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Menu</span></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+        </ul>
+	</aside>
+
+<!--Banner/Slider-->
+    <div class="banner">
+		<img class="logo" src="img/echo-logo.png" alt="company logo">
+		<div class="banner-slide current"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+	</div>
+	<div class="buttons">
+		<button id="prev"><i class="fas fa-arrow-left"></i></button>
+		<button id="next"><i class="fas fa-arrow-right"></i></button>
+	</div>
+
+<!--Row 1-->
+<div class="row1">
+	<div class="featured">
+		<h2>We don't just launch rockets</h2>
+		<h3>We sometimes land them too</h3>
+		<br>
+		<p>Let's face it, the world is pretty crazy right now. Wouldn't you just like to escape? Why not blast off this rock into the great unknown of
+			space with Echo Space Industries! Coronavirus can't survive in space ya know. 
+			<br><br>
+			Echo Space Industries is the future of space exploration. Besides chartering guests to the final frontier, our primary goal is to put a man on
+			Saturn's rings within the next decade. We really want to see if you can ice skate on those bad boys. Reach out to us today for your space charter needs!</p>
+
+	<a href="#about"><button class="page-buttons">ABOUT US</button></a>
+	<div class="break"></div>
+		
+	<div class="bullets">
+		<p>+ Professionally visualize intermandated models</p>
+		<p>+ Holisticly repurpose high-quality sources</p>
+		<p>+ Conveniently incentivize error-free potentialities</p>
+	</div>
+	</div>
+
+	<div class="featured-img">
+		<img src="img/rocket-echo.png" alt="rocket ship">
+	</div>
 </div>
 
-    <script src="main.js"></script>
+<!--Row 2-->
+<div class="row2">
+		<img class="stats" src="img/stats-1.png" alt="14 Years in Business">
+		<img class="stats" src="img/stats-2.png" alt="500+ Rockets Launched">
+		<img class="stats" src="img/stats-3.png" alt="Only 3 Passengers Lost">
+</div>
+
+<!--Row 3-->
+<div class="row3 anchor" id="about">
+	<div class="about">
+		<div><h4>LEARN A LITTLE ABOUT US</h4></div>
+		<div><hr></div>
+		<div><h3>Why your next trip should be with Echo</h3></div>
+	</div>
+	<div class="break"></div>
+	<div class="break"></div>
+		<div class="primary col"><h4><span class="numbers2">01</span>PROVEN TRACK RECORD</h4>
+			<p>As you can see above, we have been in business for 14 years and successfully launched more than 500 rockets carrying more than 12,000 people into
+				space. Over this time we have only lost 3 passengers to the eternal abyss. That's only 0.0005% of all passengers! Not too shabby if you ask us.
+			</p>
+		</div>
+
+		<div class="secondary col"><h4><span class="numbers2">02</span>GOVERNMENT FUNDING</h4>
+			<p>Because space chartering is a new field, the government has taken a special interest in our business. They provide yearly funding that ensures our flights 
+				our as safe and effective as possible. All the government asks in return is that you sell all your data and never question them no matter what.
+			</p>
+		</div>
+
+		<div class="tertiary col"><h4><span class="numbers2">03</span>FIVE STAR YELP REVIEWS</h4>
+			<p>We think our reviews speak for themselves. Pop over to our Yelp page by clicking the link listed below and check out all our 5 star reviews! Customer
+				satisfaction is our highest priority from the moment you step on board to the moment you land at your celestial destination. 
+				<a href="https://www.yelp.com/biz/echo-space-industries-louisville" target="_blank"> →Yelp Page</a></p>
+				
+		</div>
+
+		<div class="break"></div>
+
+		<div class="center">
+			<button id="about-button" class="page-buttons">LEARN MORE</button>
+			<div id ="myPopup2" class="popup">
+				<div class="popup-content">
+				<span class="close2">&times;</span>
+				<h2>An Array Of Adjectives</h2>
+				<h3>TO DESCRIBE ECHO</h3>
+				<div class="array">
+				<ul id="adjectives"></ul>
+				<hr>
+				<div id="last"></div>
+			</div>
+		
+		</div>
+		</div>
+		</div>
+</div>
+
+<!--Row 4-->
+<div class="row4 anchor" id="testimonials">
+	<div class="testimonial">
+		<h2 class="testimonial">What Do Our Clients Say?</h2>
+		<div class="break"></div>
+		<p><i>"Wow, what an experience! This was just my 3rd time in space and this trip was by far the best thanks to Echo. From blast off to touch down,
+			they did not dissapoint. I don't know what's the deal with airline food, but rocket food is amazing. We even got to see a 4th dimensional space whale! What a treat. All in all, I would rate Echo Space Industries 5 stars,
+			hah get it? Cause it's space."</i></p>
+			<div><hr></div>
+			<p>Mike Mikerson, Louisville, KY</p>
+	</div>
+</div>
+
+<!--Row 5-->
+<div class="row5 anchor" id="pricing">
+	<div class="pricing">
+		<h2>So how much does all this cost?</h2>
+		<h3>How much you got? We'll take that plus some more</h3>
+		<br>
+		<p>Space travel is kinda difficult. We have put years and years of R&D into this company and so the price will reflect that dedication.
+            If you are wanting to get on the next shuttle outta here then you will be looking at 3 easy payments of a lot of money and 1 complicated 
+            payment of a whole lot of money. If you need to use a few credit cards, that's okay.</p>
+
+		<p>Interested in a payment plan? We can work with you on easy, no hassle incremental payments towards your adventure into
+			space exploration. If you participate in our super safe (not sketchy at all) experiments, we can knock a payment off.</p>
+
+		<p>So what are you waiting for? Experience the wonders of our universe in style with Echo Space Industries. To calculate your
+			trip price, just click the button below and select your package, seat, destination and any addons you would like.</p>
+		
+	<button id ="pricing-button" class="page-buttons">MORE INFO ON PRICING</button>
+	<div id ="myPopup" class="popup">
+		<div class="popup-content">
+		<span class="close">&times;</span>
+		<p><h1>Trip Price Calculator</h1>
+			<br>
+	
+			<select name='base' class="price">
+				<option selected disabled value="0">-- Select Base Package --</option>
+				<option value='150000' id="base">Cosmic Package: $150,000</option>
+				<option value='175000' id="base">Astral Package: $175,000</option>
+				<option value='200000' id="base">Stellar Package: $200,000</option>
+			</select>
+		
+			<br>
+		
+			<select name='seat' class="price">
+				<option selected disabled value="0"> -- Select Seat --</option>
+				<option value='6000' id="seat">Middle: $6,000</option>
+				<option value='8000' id="seat">Aisle: $8,000</option>
+				<option value='10000' id="seat">Window: $10,000</option>
+			</select>
+		
+			<br>
+		
+			<select name='destinations' class="price">
+				<option selected disabled value="0"> -- Select Destination --</option>
+				<option value='5000'>Moon: $5,000</option>
+				<option value='15000'>Mercury: $15,000</option>
+				<option value='10000'>Venus: $10,000</option>
+				<option value='20000'>Mars: $20,000</option>
+				<option value='30000'>Jupiter: $30,000</option>
+				<option value='40000'>Saturn: $40,000</option>
+				<option value='50000'>Uranus: $50,000</option>
+				<option value='60000'>Neptune: $60,000</option>
+				<option value='70000'>Pluto (Yes, it's a planet): $70,000</option>
+			</select>
+			
+			<br>
+		
+			<select name='snacks' class="price">
+				<option selected disabled value="0">-- Select Snack Addon --</option>
+				<option value="0">No Thanks</option>
+				<option value='10'>Moon Rocks: $10</option>
+				<option value='15'>Rocket Kabobs: $15</option>
+				<option value='20'>Galactic Goulash: $20</option>
+			</select>
+		
+			<br>
+		
+			<select name='drinks' class="price">
+				<option selected disabled value="0">-- Select Drink Addon --</option>
+				<option value="0">No Thanks</option>
+				<option value="10">Milky Way Martini: $10</option>
+				<option value='10'>Shooting Star Slushie: $10</option>
+				<option value='10'>Martian Mule: $10</option>
+				<option value='10'>Comet Chardonnay: $10</option>
+			</select>
+		<input type="button" id="add" value="Calculate" class="page-buttons" />
+		<br>
+		<br>
+		<h2>Your Price:</h2>
+		<input type="text" name="totalPrice" id="totalPrice" value="">
+		</p>
+	</div>
+	</div>
+	
+</div>
+
+	<div class="featured-img-2">
+		<img src="img/astronaut.png" alt="astronaut">
+	</div>
+</div>
+
+<!--Row 6-->
+<div class="row6 anchor" id="contact">
+	<div class="contact">
+		<h1>Contact Us</h1>
+		<h3>Are you ready to experience the awe-inspiring wonders of our galaxy? We know you are. 
+			So reach out to us by phone or email with any questions and to schedule your trip into space today!</h3>
+	</div>
+	<br>
+	<div class="phone-email">
+		<div class="phone">
+			<i class="fas fa-phone" id="phoneIcon"></i>
+			<hr>
+			<h5>Give us a call</h5>
+			<p>Our scheduling department is open Monday through Friday 9am-6pm EST. If you are looking for more information about the space charter process,
+			or have questions about your already scheduled trip, press 2 during the selection process.</p>
+			<a href="tel:5028675309">
+			<button class="page-buttons">+1 502 867 5309</button>
+			</a>
+		</div>
+
+	<div class="email">
+		<i class="fas fa-envelope" id="emailIcon"></i>
+		<hr>
+		<h5>Send us a message</h5>
+		<p>Email us anytime for more information or to check on your upcoming charter. You will receive an email response within 24 hours of sending. This is 
+			some more text in order to make the phone and email paragraphs roughly equal in length. </p>
+			<a href="mailto:info@echo.com?subject=What ya wanna know?">
+		<button class="page-buttons">info@echo.com</button>
+		</a>
+	</div>
+</div>
+</div>	
+
+
+<!--
+<div id="error"></div>
+<form id="form" method="GET">
+	<div>
+		<label for="name">Name</label>
+		<input id="name" name="name" type="text">
+	</div>
+	<div>
+		<label for="password">Password</label>
+		<input id="password" name="password" type="password">
+	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+</form>
+-->
+
+
+
+
+<footer class="footer">
+	<span>&copy;2020 Echo Space Industries. All rights reserved.</span>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
