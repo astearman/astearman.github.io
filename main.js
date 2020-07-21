@@ -1,5 +1,4 @@
 
-
 /* Animate the hamburger menu from 3 lines to an X */
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
