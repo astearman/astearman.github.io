@@ -175,7 +175,6 @@ img {
     visibility: hidden;
     transition: all 0.5s ease-in-out;
     z-index:9999;
-    min-height: -webkit-fill-available;
 }
 
 .nav-sidebar ul {
