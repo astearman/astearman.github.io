@@ -170,6 +170,7 @@ img {
     bottom: 0;
     width: 90px;
     height: calc(100% - 90px);
+    min-height: -webkit-fill-available;
     background-color: #1b1b1b;
     z-index: 1000;
     visibility: hidden;
@@ -877,4 +878,3 @@ select {
         padding-top:2em;
     }
 }
-
