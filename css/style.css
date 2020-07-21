@@ -170,7 +170,6 @@ img {
     bottom: 0;
     width: 90px;
     height: calc(100% - 90px);
-    min-height: -webkit-fill-available;
     background-color: #1b1b1b;
     z-index: 1000;
     visibility: hidden;
@@ -295,13 +294,13 @@ img {
 
 .buttons button#next {
     position: absolute;
-    top: 45%;
+    top: 48%;
     right: 15px;
 }
 
 .buttons button#prev {
     position: absolute;
-    top: 45%;
+    top: 48%;
     left: 15px;
 }
 
