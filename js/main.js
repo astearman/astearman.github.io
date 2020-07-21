@@ -173,3 +173,4 @@ array.forEach((item) => {
 });
 
 document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&nbsp;' + '&nbsp;' + 'to work for!';
+
