@@ -341,7 +341,7 @@ img {
 .logo {
     margin: 0 auto 3em auto;
     z-index:10;
-    width: 300px;
+    width: 250px;
 }
 
 .tagline {
@@ -815,6 +815,12 @@ select {
     #dimmer {
         transition: all 0.5s ease-in-out;
         display: none;
+    }
+
+    .logo {
+        margin: 0 auto 3em auto;
+        z-index:10;
+        width: 300px;
     }
 }
 
